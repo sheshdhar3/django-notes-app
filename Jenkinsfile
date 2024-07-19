@@ -4,7 +4,7 @@ pipeline {
     stages{
         stage("Clone Code"){
             steps {
-                echo "Cloning the code"
+                echo "Cloning the code on EC2 server"
                 git url:"https://github.com/LondheShubham153/django-notes-app.git", branch: "main"
             }
         }
@@ -26,7 +26,7 @@ pipeline {
         }
         stage("Deploy"){
             steps {
-                echo "Deploying the container"
+                echo "Deploying the container on EC2 serverSD"
                 sh "docker-compose down && docker-compose up -d"
                 
             }
