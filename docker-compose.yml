@@ -1,6 +1,6 @@
 version : "3.3"
 services :
   web :
-     image : sheshdhar3/node-app-batch-6
+     image :  mithyronnie/django-docker-box       #sheshdhar3/node-app-batch-6
      ports :
          - "8000:8000"
