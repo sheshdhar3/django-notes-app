@@ -10,7 +10,7 @@ pipeline {
         }
         stage("Build"){
             steps {
-                echo "Building the image for EC2 server"
+                echo "Building the image for EC2 server Sheshd"
                 sh "docker build -t my-note-app ."
             }
         }
