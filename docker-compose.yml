@@ -3,4 +3,4 @@ services :
   web :
      image :  shubham1361/django-notes-app
      ports :
-         - "8000:8000"
+         - "8777:8000"
